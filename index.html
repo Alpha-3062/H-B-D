@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Fatima 🎂</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <!-- Background Music -->
+    <audio id="birthdayMusic">
+        <source src="/birthday-song.mp3" type="audio/mpeg">
+
+    </audio>
+    
+    <!-- Play Music Button -->
+    <button id="playMusicButton" onclick="playMusic()">🎵 Play Music</button>
+    
+    <script>
+        function playMusic() {
+            let music = document.getElementById("birthdayMusic");
+            music.play();
+        }
+    </script>
+    
+    <!-- Floating Balloons -->
+    <div class="balloons">
+        <div class="balloon b1"></div>
+        <div class="balloon b2"></div>
+        <div class="balloon b3"></div>
+        <div class="balloon b4"></div>
+        <div class="balloon b5"></div>
+    </div>
+
+    <!-- Confetti Effect -->
+    <canvas id="confetti"></canvas>
+
+    <!-- Fireworks Effect -->
+    <canvas id="fireworks"></canvas>
+
+    <!-- Cards -->
+    <div class="cards-container">
+        <div class="cards">
+            <div class="card" id="card-1">
+                <h1 class="sparkle-text">🎉 Happiest Birthday Famma 🎂</h1>
+                <p>Wishing you a magical day filled with love, joy, and happiness! 💖</p>
+            </div>
+            <div class="card" id="card-2">
+                <h1 class="sparkle-text">🎉 You are amazing my love 💖 </h1>
+                <p>Keep smiling and shining🌟</p>
+            </div>
+            <div class="card" id="card-3">
+                <h1 class="sparkle-text">🎉 You are my everything 💖</h1>
+                <p>May all your dreams come true. 🥳</p>
+            </div>
+            <div class="card" id="card-4">
+                <h1 class="sparkle-text">🎉 To My cutie  💖</h1>
+                <p>You're the best chapter of my life 🌟 </p>
+            </div>
+            <div class="card" id="card-5">
+                <h1 class="sparkle-text">🎉I hope you like it 🌟</h1>
+                <p>May happiness follow you always and yes 
+                    you are my first and last Moti pasandeeda aurat 🤣💖 </p>
+            </div>
+        </div>
+        <div class="swap-button_div">
+            <button class="swap-button" onclick="swapCards('left')">&#8592;</button>
+            <button class="swap-button" onclick="swapCards('right')">&#8594;</button>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
